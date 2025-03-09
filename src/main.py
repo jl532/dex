@@ -16,7 +16,7 @@ class Proposal(BaseModel):
     adjustment: float  # Value adjustment (could be positive or negative)
     productsInProposal: list
     
-class product(BaseModel):
+class Product(BaseModel):
     item_name: str
     uniqueID: int  # Unique identifier for each card
     adjustment: float
