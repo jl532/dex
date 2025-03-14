@@ -1,0 +1,29 @@
+services:
+  angular-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - NODE_ENV=production
+
+  angular-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: build
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run test -- --watch=false --browsers=ChromeHeadlessNoSandbox
+
+  angular-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: build
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run build -- --configuration production
