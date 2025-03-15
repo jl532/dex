@@ -1,4 +1,4 @@
-name: Build and Test Angular Frontend with Docker
+name: Frontend CI with Docker
 
 on:
   push:

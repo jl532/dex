@@ -1,4 +1,6 @@
-# PokeDEXFrontend
+# PokeDEX Frontend
+
+![CI Workflow](https://github.com/jl532/dex/actions/workflows/frontend.yml/badge.svg?)
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
 
