@@ -8,10 +8,15 @@
     padding: 1rem;
   }
   
-  .home-container h1 {
+  .home-container h1{
     color: var(--poke-yellow);
     font-size: clamp(2rem, 5vw, 3rem);
     text-shadow: 2px 2px var(--poke-black);
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .home-container h3{
     text-align: center;
     margin-bottom: 2rem;
   }
